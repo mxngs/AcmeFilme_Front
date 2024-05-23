@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js" type="module" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: { 
+              colors: {
+                clifford: '#15324D',
+              },
+              spacing:{
+                imgg: '450px',
+                capa: '230px',
+                card: "200px",
+                body:'100vh'
+
+              },
+              zIndex: {
+                img: '-1',
+      }
+            }
+          }
+        }
+      </script>
+   <title>ACME FILMES</title>
+</head>
+
+<!-- Fundo degrade do site -->
+<body class="bg-gradient-to-t from-clifford w-[100%] h-full bg-no-repeat z-[-1] ">
+
+   <header>
+    <!-- Img da logo -->
+    <div class="absolute top-[50px] left-[58%]">
+      <img src="./img/logo.png" alt="">
+    </div>
+
+    <!-- Img decoração da logo -->
+    <div class="absolute top-[122px] left-[68%]">
+      <img src="./img/decoracao_logo.png" alt="">
+    </div>
+
+    <!-- Filme principal, ira vir da api qnd fizer filmes fav -->
+    <div class="absolute z-10 h-[150px] w-[620px] transform hover:scale-105'duration-300">
+      <img src="./img/filmePrincipal.png" alt="">
+    </div>
+
+    <!-- Retangulos decorativos -->
+   <div class="bg-blue-950 h-96 w-2/6 absolute top-[20px] rounded-t-lg rounded-ee-2xl shadow-2xl" ></div>
+   <div class="bg-slate-500 h-96 w-[630px] absolute top-[10px] rounded-t-lg rounded-ee-2xl shadow-2xl"  ></div>
+   <div class="bg-black h-96 w-[620px] absolute rounded-t-lg rounded-ee-2xl shadow-2xl" ></div>
+   
+   <!-- barra de pesquisa -->
+   <div class="absolute left-[50%] top-[180px]">
+   <input class="w-[600px] rounded-lg" placeholder="Procure um filme...">
+   </div>
+
+   <!-- botao categorias -->
+   <div class="fixed left-[96%] top-[10px]">
+    <img src="./img/categorias.png" alt="">
+   </div>
+
+   </header>
+
+   <main>
+
+    <!-- Filmes que veem da api -->
+    <div class="flex  px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 pt-imgg gap-[35px] " id="filmes"></div>
+
+    </main>
+
+    <footer class="">
+
+      <!-- footer azul -->
+      <div class="bg-blue-950 fixed mt-10 w-[100%] h-[70px] "></div>
+
+      <!-- Img aplicativos -->
+      <div class="fixed left-[50%] top-[90%] z-10"></div>
+
+    </footer>
+
+ 
+</body>
+
+</div>
+</html>
+
+
+   
+
